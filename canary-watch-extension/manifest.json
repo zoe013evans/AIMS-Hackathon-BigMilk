@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Canary Watch",
+  "version": "1.2",
+  "description": "Provides Good, Neutral, or Flagged ethical ratings for company websites.",
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/canary-normal-16.png",
+      "48": "icons/canary-normal-48.png",
+      "128": "icons/canary-normal-128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/canary-normal-16.png",
+    "48": "icons/canary-normal-48.png",
+    "128": "icons/canary-normal-128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["data/sites-data.json"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "vegemite.com.au": {
+    "status": "good",
+    "title": "Report: Strong Ethical Standing",
+    "shortExplanation": "This company is recognized for its commitment to local sourcing, transparent production, and strong community engagement programs.",
+    "details": {
+      "transparency": "Excellent. Publishes an annual, externally audited social impact report.",
+      "compliance": "6/6 standards met. Consistently exceeds national labor and environmental standards.",
+      "ngoWarning": "No active warnings. Frequently cited as a positive example by industry watchdogs."
+    },
+    "links": [
+      { "text": "View B Corp Certification", "url": "https://example.com/bega-bcorp-status" },
+      { "text": "Read the 2023 Community Impact Report", "url": "https://example.com/bega-impact-2023" }
+    ]
+  },
+  "blundstone.co.uk": {
+    "status": "flagged",
+    "title": "NGO Warning: Supply Chain Concerns",
+    "shortExplanation": "This company has been flagged due to a lack of transparency in its offshore supply chain and reports from labor advocacy groups.",
+    "details": {
+      "transparency": "Poor. Key supplier details and factory audit results are not publicly disclosed.",
+      "compliance": "1/6 standards met. Fails to meet benchmarks for living wages and worker empowerment.",
+      "ngoWarning": "Multiple NGOs have raised concerns about factory conditions and unfair labor practices."
+    },
+    "links": [
+      { "text": "View the 'Ethical Trade' Investigation", "url": "https://example.com/ethical-trade-report" },
+      { "text": "Labor Watchdog Group Statement", "url": "https://example.com/labor-watchdog-statement" }
+    ]
+  },
+  "qantas.com": {
+    "status": "neutral",
+    "title": "Compliance Report: Monitored",
+    "shortExplanation": "This company meets regulatory requirements, but faces scrutiny from unions and environmental groups regarding labor practices and carbon emissions.",
+    "details": {
+      "transparency": "Standard. Publishes required annual reports but lacks detailed supply chain disclosures.",
+      "compliance": "4/6 standards met. Meets regulatory minimums but falls short on some voluntary ethical benchmarks.",
+      "ngoWarning": "Mixed. Has been criticized by transport unions while maintaining a high public safety rating."
+    },
+    "links": [
+      { "text": "Read 2023 Sustainability Report", "url": "https://example.com/qantas-sustainability" },
+      { "text": "News: Union Relations Update", "url": "https://example.com/qantas-union-news" }
+    ]
+  }
+}

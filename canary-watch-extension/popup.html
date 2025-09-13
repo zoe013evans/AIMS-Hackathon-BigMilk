@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <img id="canary-icon" src="icons/canary-normal-128.png" alt="Canary Status Icon" />
+      <h1 id="site-title">Checking Site...</h1>
+    </div>
+    <div id="content">
+      <p id="short-explanation"></p>
+      <div id="details-section">
+        <p><strong>Transparency:</strong> <span id="transparency-status"></span></p>
+        <p><strong>Compliance:</strong> <span id="compliance-score"></span></p>
+        <p><strong>NGO Warning:</strong> <span id="ngo-warning"></span></p>
+      </div>
+      <div id="links-section">
+        <h3>More Information:</h3>
+        <ul id="links-list"></ul>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  width: 350px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+#canary-icon {
+  width: 48px;
+  height: 48px;
+  margin-right: 15px;
+}
+
+#site-title {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin: 0;
+}
+
+#content p {
+  line-height: 1.5;
+  margin: 5px 0 15px 0;
+}
+
+#details-section, #links-section {
+  display: none; /* Hidden by default */
+  background-color: #fff;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+#links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#links-list li a {
+  text-decoration: none;
+  color: #3498db;
+  display: block;
+  padding: 5px 0;
+}
+
+#links-list li a:hover {
+  text-decoration: underline;
+}
+
+/* === STATE STYLES === */
+
+/* GOOD STATE: Singing Canary */
+.status-good #header { border-bottom-color: #27ae60; }
+.status-good #site-title { color: #27ae60; }
+.status-good #details-section { border-left: 4px solid #2ecc71; background-color: #f4fef8; }
+.status-good #details-section, .status-good #links-section { display: block; }
+
+/* FLAGGED STATE: Dead Canary */
+.status-flagged #header { border-bottom-color: #e74c3c; }
+.status-flagged #site-title { color: #c0392b; }
+.status-flagged #details-section { border-left: 4px solid #e74c3c; background-color: #fef5f4; }
+.status-flagged #details-section, .status-flagged #links-section { display: block; }
+
+/* NEUTRAL (MONITORED) STATE: Normal Canary with Data */
+.status-neutral #header { border-bottom-color: #7f8c8d; }
+.status-neutral #site-title { color: #34495e; }
+.status-neutral #details-section { border-left: 4px solid #95a5a6; background-color: #fafafa; }
+.status-neutral #details-section, .status-neutral #links-section { display: block; }
